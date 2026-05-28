@@ -33,18 +33,18 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 
 ### Stage 0: Understand What An Agent Is
 
-- [ ] 区分 chatbot、workflow、agent、multi-agent。 
+- [ ] 区分 chatbot、workflow、agent、multi-agent。   
       chatbot：基础的AI对话系统，LLM接收用户输入，一问一答，用的就是LLM的基础的文字接龙能力，不调用工具所以不具备实际行动能力
       workflow：流水线，LLM在一个或多个阶段完成预先指定好的任务，流程为提前设计好的固定的，比较适合标准化流程的任务
       agent：LLM为核心（大脑），自主决策下一步动作，是结束还是调用什么工具（四肢），典型的入React（observ-think-action，执行过程中灵活调整策略），plan&solve模式（先规划计划，再按照计划执行，过程中也可以调整计划）
       mutiagent：多个agent 协作，role-paly的模式，每个agent都有自己的角色工具记忆，通过对话或者消息接口发消息进行交流，例如atuoGen框架，处理复杂任务，成本高
-- [ ] 理解 agent 的基本循环：observe -> think -> act -> observe。
+- [ ] 理解 agent 的基本循环：observe -> think -> act -> observe。  
       obsrerv:观察当前状态，输入可以是用户输入，或者是环境中的工具执行结果，api调用响应等等（这些一般是和历史上下文拼接在一起，发给LLM）
       think：基于观察（当前执行结果+历史上下文），决定下一步的动作action，可以是带finish的输出，这一步输出的action提前再提示词中规定好格式
       act：根据think给出的指使进行下一步动作，比如调用工具
       observe：将act的结果与之前的上下文组成新的上下文，给到LLM，进行循环，直至最终输出final_answer
       
-- [ ] 明白什么时候不该用 agent：任务可预测、流程稳定、普通脚本能解决，可穷举异常路径的，agent 反而增加不确定性。
+- [ ] 明白什么时候不该用 agent：  任务可预测、流程稳定、普通脚本能解决，可穷举异常路径的，agent 反而增加不确定性。
       任务可预测，步骤固定，这种直接用脚本或者workflow即可，对可靠性要求搞得别用agent，容易由于幻觉等问题增加结果随机性
 - [ ] 读完 [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)。
 - [ ] 读完 [OpenAI: A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)。
