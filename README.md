@@ -33,7 +33,7 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 
 ### Stage 0: Understand What An Agent Is
 
-- [ ] 区分 chatbot、workflow、agent、multi-agent。
+- [ ] 区分 chatbot、workflow、agent、multi-agent。 \r\n
       chatbot：基础的AI对话系统，LLM接收用户输入，一问一答，用的就是LLM的基础的文字接龙能力，不调用工具所以不具备实际行动能力
       workflow：流水线，LLM在一个或多个阶段完成预先指定好的任务，流程为提前设计好的固定的，比较适合标准化流程的任务
       agent：LLM为核心（大脑），自主决策下一步动作，是结束还是调用什么工具（四肢），典型的入React（observ-think-action，执行过程中灵活调整策略），plan&solve模式（先规划计划，再按照计划执行，过程中也可以调整计划）
