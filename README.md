@@ -44,7 +44,8 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
       act：根据think给出的指使进行下一步动作，比如调用工具
       observe：将act的结果与之前的上下文组成新的上下文，给到LLM，进行循环，直至最终输出final_answer
       
-- [ ] 明白什么时候不该用 agent：任务可预测、流程稳定、普通脚本能解决时，agent 反而增加不确定性。
+- [ ] 明白什么时候不该用 agent：任务可预测、流程稳定、普通脚本能解决，可穷举异常路径的，agent 反而增加不确定性。
+      任务可预测，步骤固定，这种直接用脚本或者workflow即可，对可靠性要求搞得别用agent，容易由于幻觉等问题增加结果随机性
 - [ ] 读完 [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)。
 - [ ] 读完 [OpenAI: A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)。
 
