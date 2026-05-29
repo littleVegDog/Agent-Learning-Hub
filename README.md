@@ -46,12 +46,20 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
       
 - [ ] 明白什么时候不该用 agent：  任务可预测、流程稳定、普通脚本能解决，可穷举异常路径的，agent 反而增加不确定性。  
       任务可预测，步骤固定，这种直接用脚本或者workflow即可，对可靠性要求搞得别用agent，容易由于幻觉等问题增加结果随机性
-- [ ] 读完 [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)。
+- [ ] 读完 [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)。  
       什么是智能体：
                  工作流：预先定义好的代码路径，工具和LLM在这个路径下的节点上进行编排
                  智能体：LLM自己动态指导流程和工具调用，LLM 拥有完全的控制权，自主决定完成任务的方式
+       何时使用：原则是尽可能的使用简单的方案，对于明确的任务，工作流可可预测，结果一致性。通常任务用RAG+LLM就足够  
+       关于框架：框架好用但是封装太多，建议直接调用LLM API
+       增强型LLM：智能体的基本块，模式就是LLM + RAG + tool + memory ，我理解为就是核心就是这个搭子，LLM外挂定制的数据库，完成特定任务的决策推理,这个就是工作流下的LLM的基本单元
+      <img width="415" height="200" alt="image" src="https://github.com/user-attachments/assets/22b03303-acfc-4ecc-805d-6b61fbb4448e" />
+      
+
+        
       
 - [ ] 读完 [OpenAI: A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)。
+      
 
 产出：写一页短笔记，回答「我的场景为什么需要 agent，而不是普通 workflow？」
 
