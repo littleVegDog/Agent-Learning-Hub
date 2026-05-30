@@ -84,12 +84,12 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 
 ### Stage 1: Build A Minimal Agent Loop
 
-- [ ] 会用一个 LLM API 完成普通对话。
-- [ ] 会让模型输出结构化 JSON。
-- [ ] 会定义一个工具函数，例如 search、calculator、read_file。
-- [ ] 会解析模型的 tool call / function call。
-- [ ] 会执行工具，并把工具结果喂回模型。
-- [ ] 会给 agent loop 加最大步数、超时和错误处理。
+- [ ] 会用一个 LLM API 完成普通对话。--完成
+- [ ] 会让模型输出结构化 JSON。--完成
+- [ ] 会定义一个工具函数，例如 search、calculator、read_file。--完成
+- [ ] 会解析模型的 tool call / function call。==完成
+- [ ] 会执行工具，并把工具结果喂回模型。==完成
+- [ ] 会给 agent loop 加最大步数、超时和错误处理。--完成
 
 推荐阅读：
 
