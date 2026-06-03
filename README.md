@@ -166,7 +166,7 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 - [Claude Code Subagents](https://code.claude.com/docs/en/sub-agents)
 - [Claude Code Hooks](https://code.claude.com/docs/en/hooks)
 - [Google Agent Development Kit](https://google.github.io/adk-docs/)
-- [Agent2Agent Protocol](https://google-a2a.github.io/A2A/specification/)
+- [Agent2Agent Protocol](https://a2a-protocol.org/latest/specification/)
 - [Agent Client Protocol](https://agentclientprotocol.com/)
 
 产出：一个小型多 agent 系统，例如 research -> write -> review -> revise。
@@ -191,7 +191,7 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 - [Claude Code Agent SDK Skills](https://code.claude.com/docs/en/agent-sdk/skills)
 - [OpenClaw Skills](https://github.com/openclaw/openclaw/blob/main/docs/tools/skills.md)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
-- [Agent2Agent Protocol](https://google-a2a.github.io/A2A/specification/)
+- [Agent2Agent Protocol](https://a2a-protocol.org/latest/specification/)
 - [Agent Client Protocol](https://agentclientprotocol.com/)
 
 产出：一个可复用 skill，例如 code-review、research-report、migration-helper、pdf-extraction 或 release-note-writer。
@@ -299,7 +299,7 @@ Agent 领域变化很快。当前更值得投入的不是老式“角色扮演�
 | --- | --- | --- |
 | Skills | [Claude Code Skills](https://code.claude.com/docs/en/skills), [OpenClaw Skills](https://github.com/openclaw/openclaw/blob/main/docs/tools/skills.md) | 把一类任务的流程知识、脚本、模板和验收标准打包成可复用能力。 |
 | MCP | [Model Context Protocol](https://modelcontextprotocol.io/) | 让 agent 标准化连接外部工具、数据源和服务。 |
-| A2A | [Agent2Agent Protocol](https://google-a2a.github.io/A2A/specification/) | 让不同 agent 之间发现、通信和协作。 |
+| A2A | [Agent2Agent Protocol](https://a2a-protocol.org/latest/specification/) | 让不同 agent 之间发现、通信和协作。 |
 | ACP | [Agent Client Protocol](https://agentclientprotocol.com/) | 让编辑器、终端、IDE、宿主应用和 agent 之间形成统一接口。 |
 | Skill Quality | [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401), [Agent Skills analysis](https://arxiv.org/abs/2602.08004) | 评估 skills 是否真的提升成功率，而不是制造新的 prompt 噪声。 |
 
